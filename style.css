@@ -1,0 +1,535 @@
+/*=============================================================================
+                         common css 
+===============================================================================*/
+body{
+    color: #000;
+    font-family: Georgia,sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 96%;
+    max-width: 960px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*=============================================================================
+                         Top Header css 
+===============================================================================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background-color: #ba2e1f;
+    width: 100%;
+    padding: 13px 0;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+.mini_menu{
+    width: 70%;
+    float: left; 
+    padding-top: 5px;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    top: 5px;
+    right: -10px;
+}
+.mini_menu ul li:last-child::after{
+   display: none;
+}
+.mini_menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+   
+}
+.search_area{
+    width: 30%;
+    float: right;
+}
+.search_area form{
+    width: 96%;
+    max-width: 210px;
+    float: right;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 2%;
+}
+.search_area input{
+    border: 0 solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+    outline: none;
+}
+.search_area input[type="submit"]{
+    background-image: url(img/searchIcon.png);
+    width: 23%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+}
+
+/*=============================================================================
+                         Main Header css 
+===============================================================================*/
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    overflow: hidden;
+}
+.logo_area{
+    width: 240px;
+    float: left; 
+    margin-top: 50px;
+}
+.social_area{
+    width: 100%;
+    max-width: 700px;
+    float: right;
+    margin-top: 60px;
+}
+.social_area ul{
+     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul li a{
+    text-decoration: none;
+    display: block;
+}
+.social_area ul li a i{
+    color: #ffffff;
+    background-color: #333333;
+    border-radius: 50%;
+    width: 32px;
+    padding-top: 8px;
+    height: 24px;
+    text-align: center;  
+}
+.social_area ul li a:hover i{
+    background-color: #ee802f; 
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background-color: blue;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background-color: skyblue;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background-color: red;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+    background-color: darkred;
+}
+.social_area ul li a:hover i.fa-rss{
+    background-color: #ee802f;
+}
+
+/*=============================================================================
+                         Main Menu css 
+===============================================================================*/
+
+.main_menu{
+   width: 100%;
+    clear: both;
+}
+.inner_menu{
+    background-color: #333333;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 17px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.inner_menu::after{
+    background-color: #2b2b2b;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+.main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+   
+}
+.main_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 13px;
+}
+.main_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+.main_menu ul li a:hover{
+    color: #ba2e1f;
+    background-color: #000;
+}
+
+/*=============================================================================
+                         DROPDOWN Menu css 
+===============================================================================*/
+
+
+/*=============================================================================
+                         Body Top css 
+===============================================================================*/
+#body_top_area{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.body_top{
+    margin-top: 25px;
+}
+.image_area{
+    float: left;
+    width: 46%;
+}
+.image_area img{
+    width: 400px;
+    height: 440px;
+}
+.text_area{
+    float: right;
+    width: 54%;
+}
+.text_area p{
+    color: #000;
+}
+.text_area .para1{
+    font-size: 84px;
+    line-height: normal;
+    margin: 115px 0 0 0;
+}
+.text_area .para2{
+    font-size: 16px;
+    color: #666666;
+    margin: 25px 0 0 0;
+
+}
+.text_area .para3{
+    font-size: 16px;
+    color: #ba2e1f;
+    margin: 20px 0 0 0;
+    text-align: right;
+    cursor: pointer;
+}
+
+/*=============================================================================
+                         Body Botton css 
+===============================================================================*/
+
+#body_botton_area{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: rgba(242,242,242, .9)
+}
+.body_botton{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+.about_area{
+    width: 290px;
+    height: auto;
+}
+.about_area img{
+    width: 290px;
+    height: 140px;
+}
+.para4{
+    font-size: 26px;
+    color: #333333;
+    padding: 50px 0;
+    margin: 0;
+    font-weight: 700;
+}
+.para5{
+    font-size: 13px;
+    color: #878787;
+    margin: 0;
+
+}
+.para6{
+    font-size: 13px;
+    color: #b92d1f;
+    text-align: right;
+    margin: 0;
+    margin-top: 23px;
+}
+.para_5{
+    margin-top: 25px;
+}
+.service_area{
+    width: 290px;
+    height: auto;
+}
+.service_area .service_contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.service_area .service_contents:nth-last-child(2){
+    margin-bottom: 0;
+}
+.service_area .service_contents .service_image img{
+    width: 64px;
+    height: 64px;
+}
+.para8{
+    font-size: 14px;
+    color: #878787;
+    font-weight: 700;
+    margin: 0;
+}
+.testimonial_area{
+    width: 290px;
+    height: auto;
+}
+.testimonial_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.para7{
+    font-size: 16px;
+    color: #989898;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 10px;
+}
+.para7 span{
+    font-weight: 300;
+}
+.para9{
+    font-size: 13px;
+    color: #b92d1f;
+    text-align: right;
+    margin: 0;
+    margin-top: 13px;
+}
+/*=============================================================================
+                         Body Botton css 
+===============================================================================*/
+
+
+#footer_top_area{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 38px;
+    margin-top: 30px;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.comment_area{
+    width: 210px;
+    height: auto;
+    border-top: 2px solid #666;
+}
+.para10{
+    font-size: 16px;
+    color: #666666;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 0 33px 0;
+}
+.para11{
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+}
+.para11 span{
+    color: #b92d1f;
+    cursor: pointer;
+}
+.link_area{
+    width: 210px;
+    height: auto;
+    border-top: 2px solid #666;
+}
+.para12{
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.para_12{
+    padding-top: 0;
+}
+.blog_area{
+    width: 210px;
+    height: auto;
+    border-top: 2px solid #666;
+}
+.para13{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+    margin: 0;
+}
+.para14{
+    font-size: 10px;
+    color: #666666;
+    margin: 0;
+}
+.para14 span{
+    color: #b92d1f;
+}
+.para15{
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    padding: 20px 0 16px 0;
+}
+.para_3{
+    font-size: 12px;
+    color: #b92d1f;
+    text-align: right;
+    cursor: pointer;
+    margin: 0;
+}
+.blog_1{
+    padding-bottom: 16px;
+}
+.contact_area{
+    width: 210px;
+    height: auto;
+    border-top: 2px solid #666;
+}
+.contact_input{
+    width: 196px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 13px;
+    border: 0;
+    font-size: 13px;
+    color: #989898;
+    padding-left: 10px;
+}
+.btn{
+    color: #b92d1f;
+    width: 80px;
+    cursor: pointer;
+}
+textarea{
+    width: 196px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 13px;
+    border: 0;
+    font-size: 13px;
+    color: #989898;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#footer_bottom_area{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.para16{
+    color: #919191;
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
